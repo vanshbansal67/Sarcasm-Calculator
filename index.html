@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarcasm Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Calculator">
+        <div id="sarcasm" class="sarcasm">Tu Banega Coder re?</div>
+        <div class="display">
+            <div id="expression">2+2</div>
+            <div id="display" class="result">4</div>
+        </div>
+        <div class="buttons">
+            <button class="special" onclick="clearDisplay()">AC</button>
+            <button class="special">+/-</button>
+            <button class="special" onclick="setOperator('%')">%</button>
+            <button class="operator" onclick="setOperator('/')">/</button>
+
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="operator" onclick="setOperator('x')">x</button>
+
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="operator" onclick="setOperator('-')">-</button>
+
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button class="operator" onclick="setOperator('+')">+</button>
+
+            <button onclick="appendNumber('0')" class="span-2">0</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button class="operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
